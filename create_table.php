@@ -34,7 +34,6 @@ function writeQuotes($objectDB, $Quotes, $tableName)
             $data .= $element['ask'] . ',';
             $data .= $element['bid'] . ',';
             $ind++;
-            //if($ind > 553) break; //костыль
         }
         $columns .= 'dat,ti';
         $data .= date('Y-m-d').",".time();
